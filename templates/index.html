@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP Redirect Test</title>
+</head>
+<body>
+    <h1>Index Page</h1>
+
+    <ul>
+        <li>Request Method: {{ .Method }}</li>
+    </ul>
+
+    <h2>301 Moved Permanently</h2>
+    <form action="/301" method="post">
+        <input type="text" name="text">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>302 Found</h2>
+    <form action="/302" method="post">
+        <input type="text" name="text">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>303 See Other</h2>
+    <form action="/303" method="post">
+        <input type="text" name="text">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>307 Temporary Redirect</h2>
+    <form action="/307" method="post">
+        <input type="text" name="text">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>308 Permanent Redirect</h2>
+    <form action="/308" method="post">
+        <input type="text" name="text">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
